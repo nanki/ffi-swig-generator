@@ -8,7 +8,7 @@ def #{field_name}=(str)
   self[:#{field_name}] = @#{field_name}
 end
 def #{field_name}
-  @#{field_name}.get_string(0)
+  self[:#{field_name}].get_string(0)
 end
 code
       result.split("\n").map { |line| ' ' * indent + line }.join("\n") << "\n"
